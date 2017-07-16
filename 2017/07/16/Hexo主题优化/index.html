@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo,Next," />
 
 
 
@@ -93,15 +93,17 @@
 
 
 
-<meta name="description" content="LINUX爱好者 :-)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CAT">
-<meta property="og:url" content="http://dasuimao.com/index.html">
+<meta name="description" content="导读本文主要基于Hexo的主题NexT优化，路径：./themes/next，其他主题类似。 主题优化 多个标签  使用[标签1, 标签2…标签n]   主页文章使用预览  找到./themes/next/_config.yml 12345# Automatically Excerpt. Not recommend.# Please use &amp;lt;!-- more --&amp;gt; in the p">
+<meta name="keywords" content="Hexo,Next">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题优化">
+<meta property="og:url" content="http://dasuimao.com/2017/07/16/Hexo主题优化/index.html">
 <meta property="og:site_name" content="CAT">
-<meta property="og:description" content="LINUX爱好者 :-)">
+<meta property="og:description" content="导读本文主要基于Hexo的主题NexT优化，路径：./themes/next，其他主题类似。 主题优化 多个标签  使用[标签1, 标签2…标签n]   主页文章使用预览  找到./themes/next/_config.yml 12345# Automatically Excerpt. Not recommend.# Please use &amp;lt;!-- more --&amp;gt; in the p">
+<meta property="og:updated_time" content="2017-07-16T14:49:50.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CAT">
-<meta name="twitter:description" content="LINUX爱好者 :-)">
+<meta name="twitter:title" content="Hexo主题优化">
+<meta name="twitter:description" content="导读本文主要基于Hexo的主题NexT优化，路径：./themes/next，其他主题类似。 主题优化 多个标签  使用[标签1, 标签2…标签n]   主页文章使用预览  找到./themes/next/_config.yml 12345# Automatically Excerpt. Not recommend.# Please use &amp;lt;!-- more --&amp;gt; in the p">
 
 
 
@@ -129,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://dasuimao.com/"/>
+  <link rel="canonical" href="http://dasuimao.com/2017/07/16/Hexo主题优化/"/>
 
 
 
 
 
-  <title>CAT</title>
+  <title>Hexo主题优化 | CAT</title>
   
 
 
@@ -169,9 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -274,9 +274,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -302,9 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/16/Hexo主题优化/" itemprop="url">Hexo主题优化</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hexo主题优化</h1>
         
 
         <div class="post-meta">
@@ -384,216 +382,149 @@
       
 
       
+        <h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>本文主要基于<code>Hexo</code>的主题<code>NexT</code>优化，路径：<code>./themes/next</code>，其他主题类似。</p>
+<h2 id="主题优化"><a href="#主题优化" class="headerlink" title="主题优化"></a>主题优化</h2><ul>
+<li><p>多个标签</p>
+<ul>
+<li>使用[<code>标签1</code>, <code>标签2</code>…<code>标签n</code>]</li>
+</ul>
+</li>
+<li><p>主页文章使用预览</p>
+<ul>
+<li><p>找到<code>./themes/next/_config.yml</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Automatically Excerpt. Not recommend.</div><div class="line"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</div><div class="line">auto_excerpt:</div><div class="line">  enable: <span class="literal">true</span></div><div class="line">  length: <span class="number">150</span></div></pre></td></tr></table></figure>
+<ul>
+<li>调节<code>length</code>，调节文章预览长度。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>修改博客字体</p>
+<ul>
+<li><p>找到<code>./themes/next/source/css/_variables/custom.styl</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$font-family-headings 			= Georgia, sans 							<span class="comment">//标题，修改成你期望的字体族</span></div><div class="line">$font-family-base 				= <span class="string">"Microsoft YaHei"</span>, Verdana, sans-serif 	<span class="comment">//修改成你期望的字体族</span></div><div class="line">$font-size-base 				= <span class="number">18</span>px 										<span class="comment">//正文字体的大小</span></div><div class="line">$posts-expand-title-font-weight = $font-weight-bolder						<span class="comment">//扩展标题</span></div></pre></td></tr></table></figure>
+<ul>
+<li>相当于覆盖了<code>./themes/next/source/css/_variables/base.styl</code>定义！ </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>首页增加<code>关于</code></p>
+<ul>
+<li><p>打开文件<code>./themes/next/_config.yml</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># ---------------------------------------------------------------</div><div class="line"># Menu Settings</div><div class="line"># ---------------------------------------------------------------</div><div class="line"></div><div class="line"># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -&gt; archives)</div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories/</div><div class="line">  about: /about/</div><div class="line">  archives: /archives/</div><div class="line">  tags: /tags/</div><div class="line">  #sitemap: /sitemap.xml</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
+</li>
+<li><p>命令行操作</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"about"</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>打开<code>./source/about/index.md</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">15</span>:<span class="number">05</span>:<span class="number">49</span></div><div class="line">---</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">&gt; 作    者：孙宇 | SY</div><div class="line">&gt; 别    名：大水猫</div><div class="line">&gt; 创建时间：<span class="number">2017</span><span class="number">-7</span><span class="number">-16</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>首页增加<code>分类</code></p>
+<ul>
+<li><p>打开文件<code>./themes/next/_config.yml</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># ---------------------------------------------------------------</div><div class="line"># Menu Settings</div><div class="line"># ---------------------------------------------------------------</div><div class="line"></div><div class="line"># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -&gt; archives)</div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories/</div><div class="line">  about: /about/</div><div class="line">  archives: /archives/</div><div class="line">  tags: /tags/</div><div class="line">  #sitemap: /sitemap.xml</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
+</li>
+<li><p>命令行操作</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"categories"</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>打开<code>./source/categories/index.md</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">12</span>:<span class="number">45</span>:<span class="number">09</span></div><div class="line">type: <span class="string">"categories"</span></div><div class="line">---</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>首页增加<code>标签</code></p>
+<ul>
+<li><p>打开文件<code>./themes/next/_config.yml</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># ---------------------------------------------------------------</div><div class="line"># Menu Settings</div><div class="line"># ---------------------------------------------------------------</div><div class="line"></div><div class="line"># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -&gt; archives)</div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories/</div><div class="line">  about: /about/</div><div class="line">  archives: /archives/</div><div class="line">  tags: /tags/</div><div class="line">  #sitemap: /sitemap.xml</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
+</li>
+<li><p>命令行操作</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"tags"</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>打开<code>./source/tags/index.md</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">12</span>:<span class="number">43</span>:<span class="number">53</span></div><div class="line">type: <span class="string">"tags"</span></div><div class="line">comments: <span class="literal">false</span> # 关闭这个页面的多说或者 Disqus 评论</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
         
-          
-          导读本文主要基于Hexo的主题NexT优化，路径：./themes/next，其他主题类似。
-主题优化
-多个标签
 
-使用[标签1, 标签2…标签n]
+      
+    </div>
 
-
-主页文章使用预览
-
-找到./themes/next/_config.yml
-12345# Automatically Excerpt. Not r
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/16/Hexo主题优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://dasuimao.com/2017/07/16/GitHub与Hexo搭建个人博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SY">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CAT">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/16/GitHub与Hexo搭建个人博客/" itemprop="url">GitHub与Hexo搭建个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-16T15:50:35+08:00">
-                2017-07-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/经验/" itemprop="url" rel="index">
-                    <span itemprop="name">经验</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-
+            <a href="/tags/Next/" rel="tag"># Next</a>
           
-            
-          
-
-          
-          
-             <span id="/2017/07/16/GitHub与Hexo搭建个人博客/" class="leancloud_visitors" data-flag-title="GitHub与Hexo搭建个人博客">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-		
         </div>
-      </header>
-    
+      
 
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          导读本文主要描述搭建基于GitHub博客的流程，首先需要有一个私人域名，然后使用博客框架Hexo，配合主题next，最终打造一个小资的可定制的博客！
-域名
-从GoDaddy购买一个域名，如何购买，网上有教程。
-注意：目前只有新加坡的网站支持支付宝，在下完订单后，最后一步支付时，如果使用chrome的
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/16/GitHub与Hexo搭建个人博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/16/GitHub与Hexo搭建个人博客/" rel="next" title="GitHub与Hexo搭建个人博客">
+                <i class="fa fa-chevron-left"></i> GitHub与Hexo搭建个人博客
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -601,6 +532,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -621,8 +556,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar1.jpg"
@@ -704,6 +648,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#导读"><span class="nav-number">1.</span> <span class="nav-text">导读</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题优化"><span class="nav-number">2.</span> <span class="nav-text">主题优化</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -817,10 +777,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
