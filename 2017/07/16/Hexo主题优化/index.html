@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://dasuimao.com/2017/07/16/Hexo主题优化/index.html">
 <meta property="og:site_name" content="CAT">
 <meta property="og:description" content="导读本文主要基于Hexo的主题NexT优化，路径：./themes/next，其他主题类似。 主题优化 多个标签  使用[标签1, 标签2…标签n]   主页文章使用预览  找到./themes/next/_config.yml 12345# Automatically Excerpt. Not recommend.# Please use &amp;lt;!-- more --&amp;gt; in the p">
-<meta property="og:updated_time" content="2017-07-16T14:49:50.641Z">
+<meta property="og:updated_time" content="2017-07-17T15:08:28.951Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo主题优化">
 <meta name="twitter:description" content="导读本文主要基于Hexo的主题NexT优化，路径：./themes/next，其他主题类似。 主题优化 多个标签  使用[标签1, 标签2…标签n]   主页文章使用预览  找到./themes/next/_config.yml 12345# Automatically Excerpt. Not recommend.# Please use &amp;lt;!-- more --&amp;gt; in the p">
@@ -371,7 +371,7 @@
           
 
           
-		
+
         </div>
       </header>
     
@@ -418,16 +418,13 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"about"</span></div></pre></td></tr></table></figure>
 <ul>
 <li><p>打开<code>./source/about/index.md</code></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">15</span>:<span class="number">05</span>:<span class="number">49</span></div><div class="line">---</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">&gt; 作    者：孙宇 | SY</div><div class="line">&gt; 别    名：大水猫</div><div class="line">&gt; 创建时间：<span class="number">2017</span><span class="number">-7</span><span class="number">-16</span></div></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">15</span>:<span class="number">05</span>:<span class="number">49</span></div><div class="line">---</div></pre></td></tr></table></figure>
+<blockquote>
+<p>作    者：孙宇 | SY<br>别    名：大水猫<br>创建时间：2017-7-16</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+ 首页增加`分类`</div><div class="line"></div><div class="line">  + 打开文件`./themes/next/_config.yml`</div><div class="line"></div><div class="line">    ```c</div><div class="line">    # ---------------------------------------------------------------</div><div class="line">    # Menu Settings</div><div class="line">    # ---------------------------------------------------------------</div><div class="line"></div><div class="line">    # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -&gt; archives)</div><div class="line">    menu:</div><div class="line">      home: /</div><div class="line">      categories: /categories/</div><div class="line">      about: /about/</div><div class="line">      archives: /archives/</div><div class="line">      tags: /tags/</div><div class="line">      #sitemap: /sitemap.xml</div><div class="line">      #commonweal: /404.html</div></pre></td></tr></table></figure>
+</blockquote>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li><p>首页增加<code>分类</code></p>
-<ul>
-<li><p>打开文件<code>./themes/next/_config.yml</code></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># ---------------------------------------------------------------</div><div class="line"># Menu Settings</div><div class="line"># ---------------------------------------------------------------</div><div class="line"></div><div class="line"># When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -&gt; archives)</div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories/</div><div class="line">  about: /about/</div><div class="line">  archives: /archives/</div><div class="line">  tags: /tags/</div><div class="line">  #sitemap: /sitemap.xml</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
 </li>
 <li><p>命令行操作</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"categories"</span></div></pre></td></tr></table></figure>
@@ -448,10 +445,22 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"tags"</span></div></pre></td></tr></table></figure>
 <ul>
 <li><p>打开<code>./source/tags/index.md</code></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">12</span>:<span class="number">43</span>:<span class="number">53</span></div><div class="line">type: <span class="string">"tags"</span></div><div class="line">comments: <span class="literal">false</span> # 关闭这个页面的多说或者 Disqus 评论</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>​</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: </div><div class="line">date: <span class="number">2017</span><span class="number">-07</span><span class="number">-16</span> <span class="number">12</span>:<span class="number">43</span>:<span class="number">53</span></div><div class="line">type: <span class="string">"tags"</span></div><div class="line">---</div></pre></td></tr></table></figure>
 </li>
 </ul>
+</li>
+</ul>
+</li>
+<li><p>增加统计访问量功能</p>
+<p>参考：<a href="http://www.jeyzhang.com/hexo-next-add-post-views.html" target="_blank" rel="external">Hexo的NexT主题个性化：添加文章阅读量</a></p>
+</li>
+<li><p>增加<code>Google</code>、<code>Baidu</code>统计功能</p>
+<ul>
+<li><p>进入目录：<code>./themes/next/_config.yml</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Google Analytics</div><div class="line">google_analytics: UA<span class="number">-102634678</span><span class="number">-1</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>访问<a href="https://www.google.com/analytics/" target="_blank" rel="external">Google Analytic</a> ，申请账户。获取<code>ID</code></p>
+<p>​</p>
 </li>
 </ul>
 </li>
